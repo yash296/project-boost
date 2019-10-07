@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.45074755, g: 0.49889183, b: 0.5651484, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,7 +96,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6e8a6c2b684a9b1429757d529bf1dd3b,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -216,6 +217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -310,6 +316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obstacle (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -573,7 +584,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -748,7 +759,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -848,7 +859,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -858,7 +869,7 @@ PrefabInstance:
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 35.03
+      value: 38.2
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -984,6 +995,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain
       objectReference: {fileID: 0}
+    - target: {fileID: 3229017119721366329, guid: b36feca4c6d40da46aeeb113d0780846,
+        type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     - target: {fileID: 3229017119721366333, guid: b36feca4c6d40da46aeeb113d0780846,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1052,6 +1068,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obstacle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1151,7 +1172,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1251,7 +1272,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1351,17 +1372,17 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.61432
+      value: 199.73
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 33.194702
+      value: 38.04
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1531,6 +1552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obstacle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1721,6 +1747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Obstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -1918,6 +1949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1926,7 +1962,7 @@ PrefabInstance:
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.314705
+      value: 39.68
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
@@ -2016,7 +2052,7 @@ PrefabInstance:
     - target: {fileID: 1456770392934818946, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
       propertyPath: m_TagString
-      value: Fuel
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5707097975395805034, guid: 01ebda158bddd9e40bb0a193354d117d,
         type: 3}
