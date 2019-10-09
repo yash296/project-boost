@@ -532,3 +532,5 @@ MonoBehaviour:
   rcsThrust: 250
   mainThrust: 100
   mainEngine: {fileID: 8300000, guid: 5e03c757fa429d541b3ab68811b8af16, type: 3}
+  success: {fileID: 8300000, guid: 5acd8f3aab288124fb1fbe75800094f3, type: 3}
+  death: {fileID: 8300000, guid: 3fc63b6c079275640be883a13c2547f2, type: 3}

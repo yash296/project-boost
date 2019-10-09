@@ -9,13 +9,14 @@ public class Rocket : MonoBehaviour
     [SerializeField] float rcsThrust = 250f;
     [SerializeField] float mainThrust = 100f;
     [SerializeField] AudioClip mainEngine;
-
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip death;
     Rigidbody rigidBody;
     AudioSource audioSource;
+    enum State { Alive, Dying, Transcending };
+    State state = State.Alive;
     // Start is called before the first frame update
 
-    enum State { Alive, Dying, Transcending};
-    State state = State.Alive;
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
@@ -41,14 +42,28 @@ public class Rocket : MonoBehaviour
                 // do nothing
                 break;
             case "Finish":
-                state = State.Transcending;
-                Invoke("LoadNextLevel", 1f); //parameterise time
+                StartSuccessSequence();
                 break;
             default:
-                state = State.Dying;
-                Invoke("LoadFirstLevel", 1f);
+                StartDeathSequence();
                 break;
         }
+    }
+
+    private void StartDeathSequence()
+    {
+        state = State.Dying;
+        audioSource.Stop();
+        audioSource.PlayOneShot(death);
+        Invoke("LoadFirstLevel", 1f);
+    }
+
+    private void StartSuccessSequence()
+    {
+        state = State.Transcending;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
+        Invoke("LoadNextLevel", 1f); //parameterise time
     }
 
     private  void LoadFirstLevel()
