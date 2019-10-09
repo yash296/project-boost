@@ -8,6 +8,8 @@ public class Rocket : MonoBehaviour
 {
     [SerializeField] float rcsThrust = 250f;
     [SerializeField] float mainThrust = 100f;
+    [SerializeField] AudioClip mainEngine;
+
     Rigidbody rigidBody;
     AudioSource audioSource;
     // Start is called before the first frame update
@@ -25,8 +27,8 @@ public class Rocket : MonoBehaviour
     {
         //stop sound on death
         if(state == State.Alive) { 
-            Thrust();
-            Rotate();
+            RepondToThrust();
+            RespondToRotate();
         }
     }
      void OnCollisionEnter(Collision collision)
@@ -59,12 +61,12 @@ public class Rocket : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    private void Thrust()
+    private void RepondToThrust()
     {
         if (Input.GetKey(KeyCode.Space))
         {
             rigidBody.AddRelativeForce(Vector3.up * mainThrust);
-            if (!audioSource.isPlaying) audioSource.Play();
+            if (!audioSource.isPlaying) { audioSource.PlayOneShot(mainEngine); }
 
         }
         else
@@ -72,7 +74,7 @@ public class Rocket : MonoBehaviour
             audioSource.Stop();
         }
     }
-    private void Rotate()
+    private void RespondToRotate()
     {
         rigidBody.freezeRotation = true; //take manual control of roation
         float roatationThisFrame = rcsThrust * Time.deltaTime;

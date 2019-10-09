@@ -1977,10 +1977,19 @@ PrefabInstance:
       propertyPath: rcsThrust
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 1830838229, guid: 2a245c087836a4b49b8b5fed4db8a4b1, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 5e03c757fa429d541b3ab68811b8af16, type: 3}
     - target: {fileID: 3784508858363883862, guid: 2a245c087836a4b49b8b5fed4db8a4b1,
         type: 3}
       propertyPath: MinDistance
       value: 0.83517647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784508858363883862, guid: 2a245c087836a4b49b8b5fed4db8a4b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a245c087836a4b49b8b5fed4db8a4b1, type: 3}
